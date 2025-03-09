@@ -12,9 +12,9 @@ export class Reloj {
     const segundos = ahora.getSeconds().toString().padStart(2, "0");
 
     const horaActual = `🕒 ${horas}:${minutos}:${segundos}`;
-    console.log(horaActual); // Всё ещё в консоли 
+    console.log(horaActual);
     if (this.elemento) {
-      this.elemento.textContent = horaActual; // А теперь и на странице!
+      this.elemento.textContent = horaActual; 
     }
   }
 }
